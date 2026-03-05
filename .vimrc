@@ -20,14 +20,20 @@ set hlsearch            " Highlight all matches found in the file
 set ignorecase          " Make search case-insensitive by default
 set smartcase           " Switch to case-sensitive if search has an uppercase letter
 
-" --- 4. BACKUPS & SWAP (Keep it Clean) ---
+" --- 4. MOUSE & SOUND ---
+set mouse=a             " Enable mouse for scrolling and clicking in terminal
+set noerrorbells        " Silence the 'beep' sound on errors
+
+" --- 5. BACKUPS & SWAP (Keep it Clean) ---
 set noswapfile          " Stop creating .swp files (prevents 'found swap' errors)
 set nobackup            " Stop creating backup files (file~)
 set undofile            " Save undo history even after you close the file
 
-" --- 5. MOUSE & SOUND ---
-set mouse=a             " Enable mouse for scrolling and clicking in terminal
-set noerrorbells        " Silence the 'beep' sound on errors
+" Create undodir if it doesn't exist
+if !isdirectory($HOME . "/.vim/undodir")
+    call mkdir($HOME . "/.vim/undodir", "p", 0700)
+endif
+set undodir=~/.vim/undodir
 
 " --- 6. KEY MAPS (The Speed Boosts) ---
 " Press 'jj' quickly in Insert mode to exit to Normal mode
