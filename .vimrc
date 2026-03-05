@@ -1,5 +1,10 @@
-" --- 1. USER INTERFACE & VISIBILITY ---
+" --- 0. THEME & COLORS ---
 syntax on               " Enable code color-coding
+set termguicolors       " Enable 24-bit RGB colors for modern terminals
+set background=dark     " Optimization for dark-themed terminals
+colorscheme habamax     " Set modern default theme (clean and easy on eyes)
+
+" --- 1. USER INTERFACE & VISIBILITY ---
 set number              " Show line numbers
 set relativenumber      " Show relative line numbers for easier jumping
 set showmatch           " Highlight matching brackets (e.g., [], {}, ())
