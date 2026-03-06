@@ -1,0 +1,138 @@
+{
+  // --- Appearance & UI ---
+  "workbench.colorTheme": "Predawn",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.minimap.enabled": false,
+  "editor.dragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "liveServer.settings.donotShowInfoMsg": true,
+
+  // --- Typography & Editor ---
+  "editor.fontSize": 16,
+  "editor.fontFamily": "Source Code Pro",
+  "editor.fontWeight": "500",
+  "editor.lineNumbers": "relative",
+  "editor.tabSize": 4,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.quickSuggestionsDelay": 200,
+  "editor.inlineSuggest.enabled": true,
+  "files.autoSave": "afterDelay",
+  "files.associations": {
+    "*.html": "django-html",
+    "*.svg": "html"
+  },
+
+  // --- Terminal & Debug ---
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontFamily": "Fira Code",
+  "terminal.integrated.fontWeight": "500",
+  "debug.console.fontSize": 16,
+  "debug.console.fontFamily": "Source Code Pro",
+
+  // --- File Management ---
+  "files.exclude": {
+    "**/.git": false,
+    "**/.mypy_cache": true
+  },
+
+  // --- Vim Configuration ---
+  "vim.useSystemClipboard": true,
+  "vim.handleKeys": {
+    "<C-p>": false
+  },
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+
+  // --- GitHub Copilot (AI Agent Settings) ---
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "github.copilot.chat.codesearch.enabled": true,
+  "github.copilot.chat.newWorkspace.useContext7": true,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+
+  // --- Python & Notebooks ---
+  "python.analysis.typeCheckingMode": "off",
+  "python.analysis.autoFormatStrings": true,
+  "python.testing.pytestEnabled": true,
+  "python.testing.pytestArgs": ["tests"],
+
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+
+  "notebook.defaultFormatter": "charliermarsh.ruff",
+  "notebook.formatOnSave.enabled": true,
+  "notebook.insertFinalNewline": true,
+  "notebook.output.scrolling": true,
+  "notebook.lineNumbers": "on",
+  "notebook.scrolling.revealNextCellOnExecute": "none",
+  "notebook.codeActionsOnSave": {
+    "notebook.source.organizeImports": "explicit"
+  },
+
+  // --- Web Development (Django/HTML/Jinja) ---
+  "django.snippets.use": false,
+  "emmet.includeLanguages": {
+    "django-html": "html",
+    "jinja-html": "html"
+  },
+  "djlint.useVenv": false,
+  "djlint.pythonPath": "/home/nazmul/.local/share/uv/tools/djlint/bin/python",
+  "djlint.ignore": ["H031", "D004", "H023", "D018"],
+  "djlint.maxBlankLines": 1,
+  "djlint.lineBreakAfterMultilineTag": false,
+  "[html][django-html][jinja][jinja-html]": {
+    "editor.defaultFormatter": "monosans.djlint",
+    "editor.tabSize": 2
+  },
+
+  // --- Other Language Specifics ---
+  "[plaintext]": {
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    }
+  },
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+
+  // --- Zen Mode ---
+  "zenMode.centerLayout": false,
+  "zenMode.fullScreen": false,
+  "zenMode.hideLineNumbers": false,
+
+  // --- Code Runner ---
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.showExecutionMessage": false,
+  "code-runner.ignoreSelection": true,
+  "code-runner.saveFileBeforeRun": true,
+  "code-runner.executorMap": {
+    "python": "\"$pythonPath\" -u $fullFileName",
+    "javascript": "node",
+    "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+    "go": "go run",
+    "typescript": "ts-node",
+    "sass": "sass --style expanded",
+    "scss": "scss --style expanded"
+  },
+
+  // --- Workbench Associations ---
+  "workbench.editorAssociations": {
+    "*.copilotmd": "vscode.markdown.preview.editor",
+    "*.pdf": "default"
+  }
+}
