@@ -12,6 +12,7 @@ set laststatus=2        " Always show the status bar at the bottom
 set showmode            " Display the current mode (INSERT, VISUAL, etc.)
 set scrolloff=8         " Keep 8 lines visible above/below cursor when scrolling
 set linebreak           " Wrap lines without breaking words mid-string
+set cursorline          " Highlight the current horizontal line
 
 " --- 2. INDENTATION & TABS (The 'YAML Savior') ---
 set expandtab           " Convert tabs to spaces (Essential for YAML/Python)
@@ -28,6 +29,7 @@ set smartcase           " Switch to case-sensitive if search has an uppercase le
 " --- 4. MOUSE & SOUND ---
 set mouse=a             " Enable mouse for scrolling and clicking in terminal
 set noerrorbells        " Silence the 'beep' sound on errors
+set clipboard=unnamed,unnamedplus  " Sync Vim yanks/deletes with the system clipboard (Copy/Paste)
 
 " --- 5. BACKUPS & SWAP (Keep it Clean) ---
 set noswapfile          " Stop creating .swp files (prevents 'found swap' errors)
