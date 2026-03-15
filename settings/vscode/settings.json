@@ -7,6 +7,7 @@
   "editor.dragAndDrop": false,
   "explorer.confirmDelete": false,
   "liveServer.settings.donotShowInfoMsg": true,
+  "window.menuBarVisibility": "compact",
 
   // --- Typography & Editor ---
   "editor.fontSize": 16,
