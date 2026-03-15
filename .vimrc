@@ -10,7 +10,7 @@ set relativenumber      " Show relative line numbers for easier jumping
 set showmatch           " Highlight matching brackets (e.g., [], {}, ())
 set laststatus=2        " Always show the status bar at the bottom
 set showmode            " Display the current mode (INSERT, VISUAL, etc.)
-set scrolloff=8         " Keep 8 lines visible above/below cursor when scrolling
+set scrolloff=5         " Keep 5 lines visible above/below cursor when scrolling
 set linebreak           " Wrap lines without breaking words mid-string
 set cursorline          " Highlight the current horizontal line
 
