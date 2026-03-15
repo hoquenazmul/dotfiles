@@ -2,6 +2,7 @@
   // --- Appearance & UI ---
   "workbench.colorTheme": "Predawn",
   "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "none",
   "editor.minimap.enabled": false,
   "editor.dragAndDrop": false,
   "explorer.confirmDelete": false,
@@ -11,7 +12,6 @@
   "editor.fontSize": 16,
   "editor.fontFamily": "Source Code Pro",
   "editor.fontWeight": "500",
-  "editor.lineNumbers": "relative",
   "editor.tabSize": 4,
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -37,14 +37,80 @@
   },
 
   // --- Vim Configuration ---
+  "editor.lineNumbers": "relative",
   "vim.useSystemClipboard": true,
-  "vim.handleKeys": {
-    "<C-p>": false
-  },
   "vim.insertModeKeyBindings": [
     {
       "before": ["j", "j"],
       "after": ["<Esc>"]
+    }
+  ],
+  "vim.leader": " ",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "f", "f"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["<leader>", "f", "g"],
+      "commands": ["workbench.action.findInFiles"]
+    },
+    {
+      "before": ["<leader>", "f", "r"],
+      "commands": ["workbench.action.openRecent"]
+    },
+    {
+      "before": ["<leader>", "r", "n"],
+      "commands": ["editor.action.rename"]
+    },
+    {
+      "before": ["<leader>", "c", "a"],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["<leader>", "c", "f"],
+      "commands": ["editor.action.formatDocument"]
+    },
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.view.explorer"]
+    },
+    // --- Debugging Keybindings ---
+    {
+      "before": ["<leader>", "r"],
+      "commands": ["workbench.action.debug.run"]
+    },
+    {
+      "before": ["<leader>", "d"],
+      "commands": ["workbench.action.debug.start"]
+    },
+    {
+      "before": ["<leader>", "t", "b"],
+      "commands": ["editor.debug.action.toggleBreakpoint"]
+    },
+    {
+      "before": ["<leader>", "s", "o"],
+      "commands": ["workbench.action.debug.stepOver"]
+    },
+    {
+      "before": ["<leader>", "s", "i"],
+      "commands": ["workbench.action.debug.stepInto"]
+    },
+    {
+      "before": ["<leader>", "s", "u"],
+      "commands": ["workbench.action.debug.stepOut"]
+    },
+    {
+      "before": ["<leader>", "q"],
+      "commands": ["workbench.action.debug.stop"]
+    },
+    {
+      "before": ["<leader>", "c"],
+      "commands": ["workbench.action.debug.continue"]
+    },
+    {
+      "before": ["<leader>", "dc"],
+      "commands": ["workbench.debug.action.focusRepl"]
     }
   ],
 
