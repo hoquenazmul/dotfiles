@@ -2,5 +2,9 @@
     { 
         "key": "alt+1",
         "command": "workbench.action.focusFirstEditorGroup" 
+    },
+    {
+        "key": "shift+escape",
+        "command": "workbench.action.toggleSidebarVisibility"
     }
 ]

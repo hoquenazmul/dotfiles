@@ -110,7 +110,7 @@
       "commands": ["workbench.action.debug.continue"]
     },
     {
-      "before": ["<leader>", "dc"],
+      "before": ["<leader>", "d", "c"],
       "commands": ["workbench.debug.action.focusRepl"]
     }
   ],
