@@ -6,5 +6,9 @@
     {
         "key": "shift+escape",
         "command": "workbench.action.toggleSidebarVisibility"
-    }
+    },
+    {
+        "key": "shift shift",
+        "command": "workbench.action.quickOpen",
+    },
 ]
