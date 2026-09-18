@@ -7,7 +7,6 @@
   "editor.dragAndDrop": false,
   "explorer.confirmDelete": false,
   "liveServer.settings.donotShowInfoMsg": true,
-  "window.menuBarVisibility": "compact",
 
   // --- Typography & Editor ---
   "editor.fontSize": 16,
@@ -52,10 +51,6 @@
       "before": ["g", "d"],
       "commands": ["editor.action.revealDefinition"]
     },    
-    {
-      "before": ["<leader>", "f", "f"],
-      "commands": ["workbench.action.quickOpen"]
-    },
     {
       "before": ["<leader>", "f", "g"],
       "commands": ["workbench.action.findInFiles"]
